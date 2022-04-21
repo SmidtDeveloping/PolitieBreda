@@ -10,9 +10,8 @@ const client = new discord.Client({
 })
 
 client.on("ready", () => {
-    new wok({
-        commandsDir(__dirname: "commands")
-    })
+    console.log(client.user.username);
+    
 })
 
-client.login(process.env.TOKEN)
+client.login(process.env.token)
